@@ -1,7 +1,43 @@
 body {
+    margin: 0;
     font-family: Arial;
     background: #0f172a;
     color: white;
+}
+
+.hero {
     text-align: center;
-    padding-top: 100px;
+    padding: 80px 20px;
+    background: #020617;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.tags span {
+    background: #334155;
+    padding: 5px 10px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #94a3b8;
 }

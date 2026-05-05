@@ -1,40 +1,50 @@
-<<<<<<< HEAD
-{% extends "layout/base.html" %}
-
-{% block title %}Home{% endblock %}
-
-{% block content %}
-
-<div class="hero">
-    <h1>👋 Developer Portfolio</h1>
-    <p>Python • Flask • Web Developer</p>
-</div>
-
-<div class="container">
-    <h2>🧠 Skills</h2>
-    <p>Python, Flask, HTML, CSS, Git</p>
-</div>
-
-<div class="container">
-    <h2>📁 Projects</h2>
-
-    <div class="grid">
-        <div class="card">Flask Website</div>
-        <div class="card">Guess Game</div>
-        <div class="card">API App</div>
-    </div>
-</div>
-
-{% endblock %}
-=======
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <title>Ikoleji Favour | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
-    <h1>Hello, I am a Developer</h1>
-    <p>Python • Flask • Web Developer</p>
+
+<section class="hero">
+    <h1>Ikoleji Favour</h1>
+    <p>Python Developer • Flask Engineer • Web Developer</p>
+</section>
+
+<section class="container">
+
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I build web applications using Python and Flask. I focus on clean design and real-world solutions.</p>
+    </div>
+
+    <div class="card">
+        <h2>Skills</h2>
+        <div class="tags">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Git</span>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Projects</h2>
+        <ul>
+            <li>Flask Portfolio Website</li>
+            <li>Guessing Game</li>
+            <li>API App</li>
+        </ul>
+    </div>
+
+</section>
+
+<footer>
+    Built with Flask • Hosted on Render
+</footer>
+
 </body>
 </html>
->>>>>>> 4ceb07c (clean flask portfolio setup)
