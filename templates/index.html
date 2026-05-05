@@ -2,48 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ikoleji Favour | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikoleji Favour | Python Developer</title>
+
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
-<section class="hero">
-    <h1>Ikoleji Favour</h1>
-    <p>Python Developer • Flask Engineer • Web Developer</p>
+<nav class="navbar">
+    <div class="logo">Favour.dev</div>
+    <div class="links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<header class="hero">
+    <h1>Hi, I'm Ikoleji Favour</h1>
+    <p>Python Developer • Flask Engineer • Backend Builder</p>
+    <a class="btn" href="#projects">View Projects</a>
+</header>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I build fast, clean and scalable web applications using Python and Flask.
+        I enjoy turning ideas into real working systems.
+    </p>
 </section>
 
-<section class="container">
+<section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="grid">
+        <div class="card">Python</div>
+        <div class="card">Flask</div>
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">Git</div>
+        <div class="card">APIs</div>
+    </div>
+</section>
 
-    <div class="card">
-        <h2>About Me</h2>
-        <p>I build web applications using Python and Flask. I focus on clean design and real-world solutions.</p>
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Flask Portfolio Website</h3>
+        <p>Personal portfolio built with Flask and deployed on Render.</p>
     </div>
 
-    <div class="card">
-        <h2>Skills</h2>
-        <div class="tags">
-            <span>Python</span>
-            <span>Flask</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Git</span>
-        </div>
+    <div class="project">
+        <h3>Guessing Game</h3>
+        <p>Python logic-based number guessing game.</p>
     </div>
 
-    <div class="card">
-        <h2>Projects</h2>
-        <ul>
-            <li>Flask Portfolio Website</li>
-            <li>Guessing Game</li>
-            <li>API App</li>
-        </ul>
+    <div class="project">
+        <h3>API App</h3>
+        <p>App that fetches and displays live API data.</p>
     </div>
+</section>
 
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: yourmail@gmail.com</p>
+    <p>GitHub: github.com/yourname</p>
 </section>
 
 <footer>
-    Built with Flask • Hosted on Render
+    Built with Flask • Deployed on Render
 </footer>
 
 </body>
