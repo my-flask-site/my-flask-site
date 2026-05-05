@@ -1,0 +1,20 @@
+{% extends "layout/base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <h2>Contact</h2>
+
+    {% if sent %}
+        <p>✅ Message sent!</p>
+    {% endif %}
+
+    <form method="POST">
+        <input name="name" placeholder="Name" required>
+        <input name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+{% endblock %}
